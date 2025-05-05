@@ -32,5 +32,17 @@ namespace Student_Managment_System_2._0
             Hall_Reservation_For_Student hall_Reservation_For_Student = new Hall_Reservation_For_Student();
             hall_Reservation_For_Student.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Attendance_for_Students attendance_For_Students = new Attendance_for_Students();
+            attendance_For_Students.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Exam_Results_for_Students exam_Results_for_students = new Exam_Results_for_Students();
+            exam_Results_for_students.Show();
+        }
     }
 }
