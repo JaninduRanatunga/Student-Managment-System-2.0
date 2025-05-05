@@ -28,5 +28,11 @@ namespace Student_Managment_System_2._0
         {
 
         }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            Scan_QR_code_for_admin scan_QR_Code_For_Admin = new Scan_QR_code_for_admin();
+            scan_QR_Code_For_Admin.Show();
+        }
     }
 }

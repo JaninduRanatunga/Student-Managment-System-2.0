@@ -32,9 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.studentManagementDBDataSet = new Student_Managment_System_2._0.StudentManagementDBDataSet();
-            this.hallReservationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hallReservationsTableAdapter = new Student_Managment_System_2._0.StudentManagementDBDataSetTableAdapters.HallReservationsTableAdapter();
             this.reservationIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reservationDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,10 +41,14 @@
             this.createdAtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hallNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reservationTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hallReservationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentManagementDBDataSet = new Student_Managment_System_2._0.StudentManagementDBDataSet();
+            this.hallReservationsTableAdapter = new Student_Managment_System_2._0.StudentManagementDBDataSetTableAdapters.HallReservationsTableAdapter();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentManagementDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallReservationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentManagementDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,22 +92,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1179, 498);
+            this.dataGridView1.Size = new System.Drawing.Size(1179, 427);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // studentManagementDBDataSet
-            // 
-            this.studentManagementDBDataSet.DataSetName = "StudentManagementDBDataSet";
-            this.studentManagementDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hallReservationsBindingSource
-            // 
-            this.hallReservationsBindingSource.DataMember = "HallReservations";
-            this.hallReservationsBindingSource.DataSource = this.studentManagementDBDataSet;
-            // 
-            // hallReservationsTableAdapter
-            // 
-            this.hallReservationsTableAdapter.ClearBeforeFill = true;
             // 
             // reservationIDDataGridViewTextBoxColumn
             // 
@@ -181,11 +168,39 @@
             this.reservationTimeDataGridViewTextBoxColumn.Name = "reservationTimeDataGridViewTextBoxColumn";
             this.reservationTimeDataGridViewTextBoxColumn.Width = 125;
             // 
+            // hallReservationsBindingSource
+            // 
+            this.hallReservationsBindingSource.DataMember = "HallReservations";
+            this.hallReservationsBindingSource.DataSource = this.studentManagementDBDataSet;
+            // 
+            // studentManagementDBDataSet
+            // 
+            this.studentManagementDBDataSet.DataSetName = "StudentManagementDBDataSet";
+            this.studentManagementDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // hallReservationsTableAdapter
+            // 
+            this.hallReservationsTableAdapter.ClearBeforeFill = true;
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogin.Location = new System.Drawing.Point(13, 585);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(1179, 44);
+            this.buttonLogin.TabIndex = 38;
+            this.buttonLogin.Text = "Scann QR Code";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            // 
             // HallReservationforadmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1219, 641);
+            this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "HallReservationforadmin";
@@ -194,8 +209,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentManagementDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hallReservationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentManagementDBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -217,5 +232,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn createdAtDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hallNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reservationTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }

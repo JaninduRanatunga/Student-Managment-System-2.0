@@ -35,8 +35,10 @@ namespace Student_Managment_System_2._0
 
         private void button3_Click(object sender, EventArgs e)
         {
-            HallReservationforadmin hallReservationforadmin = new HallReservationforadmin();
-            hallReservationforadmin.Show();
+           HallReservationforadmin hallReservationforadmin = new HallReservationforadmin();
+           hallReservationforadmin.Show();
+
+            
         }
     }
 }
