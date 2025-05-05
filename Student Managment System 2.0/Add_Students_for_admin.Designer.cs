@@ -52,6 +52,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtGuardianPhone = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textpassword = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -291,7 +293,7 @@
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.buttonLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLogin.Location = new System.Drawing.Point(507, 508);
+            this.buttonLogin.Location = new System.Drawing.Point(507, 574);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(402, 44);
             this.buttonLogin.TabIndex = 37;
@@ -299,11 +301,32 @@
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(503, 481);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 22);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Password";
+            // 
+            // textpassword
+            // 
+            this.textpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textpassword.Location = new System.Drawing.Point(507, 509);
+            this.textpassword.Multiline = true;
+            this.textpassword.Name = "textpassword";
+            this.textpassword.Size = new System.Drawing.Size(402, 33);
+            this.textpassword.TabIndex = 38;
+            // 
             // Add_Students_for_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(965, 644);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textpassword);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtGuardianPhone);
@@ -363,5 +386,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtGuardianPhone;
         private System.Windows.Forms.Button buttonLogin;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textpassword;
     }
 }
