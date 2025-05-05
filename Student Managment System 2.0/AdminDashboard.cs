@@ -26,5 +26,17 @@ namespace Student_Managment_System_2._0
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Student_for_admin student_For_Admin = new Student_for_admin();
+            student_For_Admin.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HallReservationforadmin hallReservationforadmin = new HallReservationforadmin();
+            hallReservationforadmin.Show();
+        }
     }
 }
