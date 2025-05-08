@@ -69,5 +69,9 @@ namespace Student_Managment_System_2._0
             }
         }
 
+        private void Markattendancesubpart_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

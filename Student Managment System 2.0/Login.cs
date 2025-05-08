@@ -76,10 +76,10 @@ namespace Student_Managment_System_2._0
                                 adminDashboard.Show();
                                 break;
 
-                            //case "Teacher":
-                                //TeachersDashboard teachersDashboard = new TeachersDashboard(userId);
-                                //teachersDashboard.Show();
-                                //break;
+                            case "Teacher":
+                                TeachersDashboard teachersDashboard = new TeachersDashboard(userId);
+                                teachersDashboard.Show();
+                                break;
 
                             case "Student":
                                 StudentDashboard studentDashboard = new StudentDashboard(userId);

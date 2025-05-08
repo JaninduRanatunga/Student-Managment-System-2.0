@@ -74,6 +74,7 @@
             this.Controls.Add(this.textBoxReservationId);
             this.Name = "Markattendancesubpart";
             this.Text = "Markattendancesubpart";
+            this.Load += new System.EventHandler(this.Markattendancesubpart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
